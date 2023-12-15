@@ -8,8 +8,10 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing import image as keras_image
 from model_loader import load_image_classifier_model as load_model_function
 from concurrent.futures import ThreadPoolExecutor
+from tensorflow.keras.models import load_model
 
 model_path = 'C:/Users/susy_/IH-Labs/final-project/Streamlit/models/trained_inception_model.keras'
+model = load_model(model_path)
 
 # Load your trained Inception model outside the main app loop using session state
 if 'your_image_classifier_module' not in st.session_state:
