@@ -1,8 +1,8 @@
 **"Hire Me or Not? Image Classifier Fun"**
 
 **Overview**
-Welcome to "Hire Me or Not? Image Classifier Fun" – a playful web tool designed to evaluate job skills through image classification, provide skill-based suggestions,
-and encourage users to share their unique strengths on social media. This project aims to bring a fun and engaging twist to the traditional job application process.
+Welcome to "Hire Me or Not? Image Classifier Fun" – a playful web tool designed to evaluate job skills through an image classification model, providing skill-based suggestions, and encourage users to share their unique strengths on social media. This project aims to bring a fun and engaging twist to the traditional job 
+application process.
 
 **Features**
 **Image Classification:** The core functionality of the tool involves classifying user-uploaded images related to their skills or interests.
