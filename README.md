@@ -47,23 +47,23 @@ The web tool features an intuitive and user-friendly interface, ensuring accessi
 
        - Int the app.py file locate the following code snippet:
 
-    ```python
+    python
     # Load your trained Inception model outside the main app loop 
     if 'your_image_classifier_module' not in st.session_state:
         model_path = 'C:/Users/susy_/IH-Labs/final-project/Streamlit/models/trained_inception_model.keras'
         st.session_state.your_image_classifier_module = load_model_function(model_path)
-    ```
+    
 
 
       - Update the `model_path` replacing `/path/to/your/models/` with the actual path to the folder where you keep the uploaded Streamlit folder and the trained Inception model.
       For example:
 
-    ```python
+    python
     # Load your trained Inception model outside the main app loop 
     if 'your_image_classifier_module' not in st.session_state:
         model_path = '/path/to/your/models/trained_inception_model.keras'
         st.session_state.your_image_classifier_module = load_model_function(model_path)
-    ```
+    
     
 
      - Save the changes and run your Streamlit app.
