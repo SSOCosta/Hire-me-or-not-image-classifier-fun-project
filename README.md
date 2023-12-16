@@ -1,32 +1,53 @@
 # **"Hire Me or Not? Image Classifier Fun"**
-**Overview**
+## Overview
 
 Welcome to "Hire Me or Not? Image Classifier Fun" – a whimsical web tool designed to assess job skills through an image classification model. This playful application not only provides skill-based suggestions but also encourages users to share their unique strengths on social media, injecting a fun twist into the conventional job application process.
 
-**Features**
+## Features
 
-1. Image Classification
+1. **Image Classification**
 
 The core functionality of the tool involves classifying user-uploaded images related to their skills and work style. This ensures a personalized and entertaining experience for each user.
 
-2. Skill-Based Suggestions
-   
+2. **Skill-Based Suggestions**
+
 Based on the image classification results, the tool provides suggestions for job skills and strengths that the user may possess. This adds a creative and humorous element to the assessment process.
 
-3. Social Media Integration
-   
-Users are encouraged to share their classification results on various social media platforms, fostering a sense of engagement and networking. Please note that the shareable link feature is currently under development and will be available in future updates.
-While the shareable link feature is currently in development, stay tuned for future updates that will allow you to easily share your results.
+3. **Social Media Integration**
 
-4. User-Friendly Interface
-   
+Users are encouraged to share their classification results on various social media platforms, fostering a sense of engagement and networking. Please note that the shareable link feature is currently under development and will be available in future updates. While the shareable link feature is currently in development, stay tuned for future updates that will allow you to easily share your results.
+
+4. **User-Friendly Interface**
+
 The web tool features an intuitive and user-friendly interface, ensuring accessibility for users of all skill levels. The simplicity of the interface enhances the overall user experience.
+
+## Skills Presentation
+
+The foundation of this project revolves around the pivotal role that skills play in the hiring process. A dedicated presentation was conducted to underscore the significance of skills in shaping successful careers and fostering professional growth.
+
+### Exploring Skill Importance
+
+The presentation delved into the critical importance of skills when evaluating and hiring individuals for various roles. Key points covered include:
+
+- The evolving job market and the increasing emphasis on specialized skills.
+- How possessing a diverse skill set enhances adaptability and problem-solving capabilities.
+- The correlation between skills, job performance, and career advancement.
+
+### Data Visualization with Tableau
+
+To enhance the understanding of skill dynamics, impactful data visualizations were created using Tableau. The central visualization focused on the EU Access Index, shedding light on the skill ranks of different EU countries.
+
+### EU Access Index Visualization
+
+![EU Access Index Visualization](https://public.tableau.com/app/profile/susy.costa/viz/SkillsRankEuropeanCountries/SkillsinEurope)
+
+The EU Access Index visualization serves as a powerful representation of the varying skill landscapes across EU countries.
+
+## Getting Started
 
 **Technical Details**
 
 The image classification is powered by a custom InceptionV3-inspired model. The architecture is designed with convolutional layers, max-pooling layers, and dense layers. The model is trained on the provided dataset for the specific image classification task.
-
-The user interface is designed using Streamlit.
 
 **How to Use**
 
@@ -99,55 +120,4 @@ Please ensure that you have all the necessary dependencies installed in your Ana
 
 **Note:** If you encounter any issues with running the app, check the console output for error messages, and make sure you have activated the correct Anaconda environment.
 
-
-
-
-
-
-
 Enjoy exploring the image classification model using "Hire Me or Not? Image Classifier Fun"!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Contributing
-We welcome contributions! Feel free to fork the repository, create issues, or submit pull requests.
-
-License
-This project is licensed under [mention the license type].
