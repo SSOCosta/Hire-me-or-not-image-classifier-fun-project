@@ -16,6 +16,7 @@ Based on the image classification results, the tool provides suggestions for job
 3. **Social Media Integration**
 
 Users are encouraged to share their classification results on social media, fostering a sense of engagement and networking. Please note that the shareable link feature is currently under development and will be available in future updates. 
+
 While the shareable link feature is currently in development, stay tuned for future updates that will allow you to easily share your results.
 
 4. **User-Friendly Interface**
