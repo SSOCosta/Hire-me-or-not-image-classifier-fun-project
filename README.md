@@ -53,7 +53,9 @@ The web tool features an intuitive and user-friendly interface, ensuring accessi
         model_path = 'C:/Users/susy_/IH-Labs/final-project/Streamlit/models/trained_inception_model.keras'
         st.session_state.your_image_classifier_module = load_model_function(model_path)
     
-      - Update the `model_path` replacing `/path/to/your/models/` with the actual path to the folder where you keep the uploaded Streamlit folder and the trained Inception model.
+      - Update the `model_path` replacing `/path/to/your/models/` with the actual path to the folder where you keep the
+      uploaded Streamlit folder and the trained Inception model.
+      
       For example:
 
     python
