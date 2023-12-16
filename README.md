@@ -23,6 +23,7 @@ While the shareable link feature is currently in development, stay tuned for fut
 The web tool features an intuitive and user-friendly interface, ensuring accessibility for users of all skill levels. The simplicity of the interface enhances the overall user experience.
 
 **Technical Details**
+
 The image classification is powered by a custom InceptionV3-inspired model. The architecture is designed with convolutional layers, max-pooling layers, and dense layers. The model is trained on the provided dataset for the specific image classification task.
 
 The user interface is designed using Streamlit.
