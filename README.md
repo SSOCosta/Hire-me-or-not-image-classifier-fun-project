@@ -21,7 +21,7 @@ While the shareable link feature is currently in development, stay tuned for fut
 
 4. **User-Friendly Interface**
 
-The web tool features an intuitive and user-friendly interface, ensuring accessibility for users of all skill levels. The simplicity of the interface enhances the overall user experience.
+The web tool features an intuitive and user-friendly interface, ensuring accessibility for users of all skill levels.
 
 ## Skills Presentation
 
