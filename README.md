@@ -39,8 +39,6 @@ The presentation delved into the critical importance of skills when evaluating a
 
 To enhance the understanding of skill dynamics, impactful data visualizations were created using Tableau. The central visualization focused on the EU Access Index, shedding light on the skill ranks of different EU countries.
 
-### EU Access Index Visualization
-
 [EU Access Index Visualization](https://public.tableau.com/app/profile/susy.costa/viz/SkillsRankEuropeanCountries/SkillsinEurope)
 
 The EU Access Index visualization serves as a powerful representation of the varying skill landscapes across EU countries.
