@@ -1,6 +1,6 @@
-![Cover Image](f54862cdd846e88430f098e1b08e1516.jpg)
-
 # **"Hire Me or Not? Image Classifier Fun"**
+![Cover Image](github_cover/f54862cdd846e88430f098e1b08e1516.jpg)
+
 ## Overview
 
 Welcome to "Hire Me or Not? Image Classifier Fun" – a whimsical web tool designed to assess job skills through an image classification model. This playful application not only provides skill-based suggestions but also encourages users to share their unique strengths on social media, injecting a fun twist into the conventional job application process.
