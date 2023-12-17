@@ -35,7 +35,7 @@ The presentation delved into the critical importance of skills when evaluating a
 - European Countries skill rank index, available at https://www.cedefop.europa.eu/en/tools/european-skills-index
 - How possessing a diverse skill set enhances adaptability and problem-solving capabilities.
 
-#### Web Scraped Images
+### Web Scraped Images
 
 Additional data was obtained through web scraping. 
 
