@@ -3,6 +3,26 @@
 
 Welcome to "Hire Me or Not? Image Classifier Fun" – a whimsical web tool designed to assess job skills through an image classification model. This playful application not only provides skill-based suggestions but also encourages users to share their unique strengths on social media, injecting a fun twist into the conventional job application process.
 
+## Code
+
+### Programming Language:
+
+- Python
+
+### Dependencies (Libraries):
+
+- **Pandas:** Data manipulation and analysis.
+- **NumPy:** Numerical operations on arrays.
+- **Matplotlib and Seaborn:** Data visualization.
+- **TensorFlow:** Deep learning library for the machine learning model.
+- **Scikit-Learn:** Machine learning tools, including train-test split and recall_score.
+- **Keras:** High-level neural networks API.
+- **Pickel:** Serialization and deserialization of Python objects.
+- **OS and shutil:** Operating system and file operations.
+- **Random:** Random number generation for data splitting.
+- **Image Data Generator:** Part of TensorFlow for image preprocessing.
+- **InceptionV3:** Pre-trained deep learning model from TensorFlow.
+
 ## Skills Presentation
 
 The foundation of this project revolves around the pivotal role that skills play in the hiring process. A dedicated presentation was conducted to underscore the significance of skills in shaping successful careers and fostering professional growth.
