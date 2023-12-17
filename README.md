@@ -72,6 +72,10 @@ The web tool features an intuitive and user-friendly interface, ensuring accessi
 
 ## Getting Started
 
+### Check Data
+
+All the images used were obtained trough google image search. The images used to train these model are available in the folder 'image_galery'
+
 **Technical Details**
 
 The image classification is powered by a custom InceptionV3-inspired model. The architecture is designed with convolutional layers, max-pooling layers, and dense layers. The model is trained on the provided dataset for the specific image classification task.
