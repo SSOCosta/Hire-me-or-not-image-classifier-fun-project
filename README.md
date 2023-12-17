@@ -31,9 +31,16 @@ The foundation of this project revolves around the pivotal role that skills play
 
 The presentation delved into the critical importance of skills when evaluating and hiring individuals for various roles. Key points covered include:
 
-- The evolving job market and the increasing emphasis on specialized skills.
+- Type of skills: soft skills vs hard skills.
+- European Countries skill rank index, available at https://www.cedefop.europa.eu/en/tools/european-skills-index
 - How possessing a diverse skill set enhances adaptability and problem-solving capabilities.
-- The correlation between skills, job performance, and career advancement.
+
+#### Web Scraped Images
+
+Additional data was obtained through web scraping. 
+Please refer to "https://keydifferences.com/difference-between-hard-skills-and-soft-skills.html" for more details related to Basis for Comparison on Hard Skills and Soft Skills
+and "https://resumekit.com/blog/hard-skills-vs-soft-skills/" for more details on the soft skils vs hard skills image collected.
+
 
 ### Data Visualization with Tableau
 
