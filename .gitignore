@@ -1,7 +1,3 @@
-# Ignore specific files
-trained_inception_model.keras
-inception_model_weights.pkl
-
 # Ignore image files
 *.png
 *.jpg

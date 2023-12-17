@@ -1,2 +1,3 @@
-cd "C:\Users\janmo\iCloudDrive\Documents\Projects\DAFT\DataV3\L9.03 Streamlit"
-C:\Users\janmo\AppData\Roaming\Python\Python37\Scripts\streamlit run deploy_model.py
+version https://git-lfs.github.com/spec/v1
+oid sha256:a313aeacebfc4b640bc06d43afc3ab1fd15dfa46445ca20faea9475969e7fb19
+size 164

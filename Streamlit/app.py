@@ -8,15 +8,12 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing import image as keras_image
 from model_loader import load_image_classifier_model as load_model_function
 from concurrent.futures import ThreadPoolExecutor
-from tensorflow.keras.models import load_model
+
+model_path = 'C:/Users/susy_/Desktop/Final Project/Streamlit/models/trained_inception_model.keras'
 
 # Load your trained Inception model outside the main app loop using session state
 if 'your_image_classifier_module' not in st.session_state:
-    model_path = 'C:/Users/susy_/IH-Labs/final-project/Streamlit/models/trained_inception_model.keras'
     st.session_state.your_image_classifier_module = load_model_function(model_path)
-
-# Confidence threshold to consider an identification
-confidence_threshold = 0.4
 
 # Confidence threshold to consider an identification
 confidence_threshold = 0.4
@@ -123,7 +120,7 @@ if uploaded_image is not None:
     # Resize and preprocess the image for the model
     target_size = (256, 256)
     image = image.resize(target_size)
-    image_array = keras_image.img_to_array(image)
+    image_array = keras_image.img_to_array(image.convert('RGB'))  # Convert to RGB
     image_array = preprocess_input(np.expand_dims(image_array, axis=0))
 
     # Use your image classifier to get predictions
