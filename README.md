@@ -1,3 +1,5 @@
+![Cover Image](f54862cdd846e88430f098e1b08e1516.jpg)
+
 # **"Hire Me or Not? Image Classifier Fun"**
 ## Overview
 
