@@ -38,9 +38,10 @@ The presentation delved into the critical importance of skills when evaluating a
 #### Web Scraped Images
 
 Additional data was obtained through web scraping. 
+
 Please refer to "https://keydifferences.com/difference-between-hard-skills-and-soft-skills.html" for more details related to Basis for Comparison on Hard Skills and Soft Skills
 
-and "https://resumekit.com/blog/hard-skills-vs-soft-skills/" for more details on the soft skils vs hard skills image collected.
+Please refer to "https://resumekit.com/blog/hard-skills-vs-soft-skills/" for more details on the soft skils vs hard skills image collected.
 
 
 ### Data Visualization with Tableau
