@@ -41,7 +41,7 @@ To enhance the understanding of skill dynamics, impactful data visualizations we
 
 ### EU Access Index Visualization
 
-![EU Access Index Visualization](https://public.tableau.com/app/profile/susy.costa/viz/SkillsRankEuropeanCountries/SkillsinEurope)
+[EU Access Index Visualization](https://public.tableau.com/app/profile/susy.costa/viz/SkillsRankEuropeanCountries/SkillsinEurope)
 
 The EU Access Index visualization serves as a powerful representation of the varying skill landscapes across EU countries.
 
