@@ -72,9 +72,9 @@ The web tool features an intuitive and user-friendly interface, ensuring accessi
 
 ## Getting Started
 
-### Check Data
+**Check Data**
 
-All the images used were obtained trough google image search. The images used to train these model are available in the folder 'image_galery'
+All the images used in this project were obtained through Google Image Search. You can find the images used to train the model in the 'image_gallery' folder.
 
 **Technical Details**
 
