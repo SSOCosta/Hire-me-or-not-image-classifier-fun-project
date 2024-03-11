@@ -7,8 +7,12 @@ from tensorflow.keras.preprocessing import image as keras_image
 from tensorflow.keras.applications.inception_v3 import preprocess_input, decode_predictions
 from tensorflow.keras.models import load_model
 from google.cloud import storage
-import os
 import io
+import os
+
+#Generating a temporary directory for storage in google cloud
+if not os.path.exists('/tmp/'):
+    os.makedirs('/tmp/')
 
 # Loading the model from Google Cloud Storage
 def load_model_from_gcs(bucket_name, model_blob_name):
