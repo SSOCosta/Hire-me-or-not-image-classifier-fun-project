@@ -24,7 +24,7 @@ def load_model_from_gcs(bucket_name, model_blob_name):
     return load_model(model_path)
 
 bucket_name = 'hire-me-or-not-imageclassifier'
-model_blob_name = 'Model/trained_inception_model.keras'
+model_blob_name = 'Streamlit/models/trained_inception_model.keras'
 
 if 'your_image_classifier_module' not in st.session_state:
     st.session_state.your_image_classifier_module = load_model_from_gcs(bucket_name, model_blob_name)
