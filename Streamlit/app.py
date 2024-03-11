@@ -1,19 +1,29 @@
 from pathlib import Path
 import streamlit as st
 from PIL import Image
-from tensorflow.keras.models import load_model
-from tensorflow.keras.applications.inception_v3 import preprocess_input, decode_predictions
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image as keras_image
-from model_loader import load_image_classifier_model as load_model_function
-from concurrent.futures import ThreadPoolExecutor
+from tensorflow.keras.applications.inception_v3 import preprocess_input, decode_predictions
+from tensorflow.keras.models import load_model
+from google.cloud import storage
+import os
+import io
 
-model_path = 'C:/Users/susy_/Desktop/Final Project/Streamlit/models/trained_inception_model.keras'
+# Loading the model from Google Cloud Storage
+def load_model_from_gcs(bucket_name, model_blob_name):
+    client = storage.Client()
+    bucket = client.bucket(bucket_name)
+    blob = bucket.blob(model_blob_name)
+    model_path = "/tmp/model.keras"  # Caminho temporário para salvar o modelo
+    blob.download_to_filename(model_path)
+    return load_model(model_path)
 
-# Load your trained Inception model outside the main app loop using session state
+bucket_name = 'hire-me-or-not-imageclassifier'
+model_blob_name = 'Model/trained_inception_model.keras'
+
 if 'your_image_classifier_module' not in st.session_state:
-    st.session_state.your_image_classifier_module = load_model_function(model_path)
+    st.session_state.your_image_classifier_module = load_model_from_gcs(bucket_name, model_blob_name)
 
 # Confidence threshold to consider an identification
 confidence_threshold = 0.4
@@ -95,7 +105,7 @@ def get_description(label):
         return "No specific description available for this category."
 
 # Front page content
-image_path = "C:/Users/susy_/Desktop/Final Project/Streamlit/images/1655272458248.jpg"
+image_path = "Streamlit/images/1655272458248.jpg"
 image = Image.open(image_path)
 st.image(image, use_column_width=True)
 st.title("Hire Me or Not? Image Classifier Fun")
