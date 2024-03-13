@@ -15,16 +15,18 @@ if not os.path.exists('/tmp/'):
     os.makedirs('/tmp/')
 
 # Loading the model from Google Cloud Storage
+
+bucket_name = 'hire-me-or-not-imageclassifier'
+model_blob_name = 'Hire-me-or-not-imageclassifier/Streamlit/models/trained_inception_model.keras'
+
 def load_model_from_gcs(bucket_name, model_blob_name):
     client = storage.Client()
     bucket = client.bucket(bucket_name)
     blob = bucket.blob(model_blob_name)
-    model_path = "/tmp/model.keras"  # Caminho temporário para salvar o modelo
+    model_path = "/tmp/model.keras"  
     blob.download_to_filename(model_path)
     return load_model(model_path)
 
-bucket_name = 'hire-me-or-not-imageclassifier'
-model_blob_name = 'Streamlit/models/trained_inception_model.keras'
 
 if 'your_image_classifier_module' not in st.session_state:
     st.session_state.your_image_classifier_module = load_model_from_gcs(bucket_name, model_blob_name)
