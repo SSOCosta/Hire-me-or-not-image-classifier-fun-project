@@ -21,8 +21,8 @@ if not os.path.exists('/tmp/'):
 
 # Loading the model from Google Cloud Storage
 
-bucket_name = 'hire-me-or-not-imageclassifier'
-model_blob_name = 'Hire-me-or-not-image-classifier-fun-project/Streamlit/models/trained_inception_model.keras'
+bucket_name = 'hire-me-or-not-image-classifier-fun-project'
+model_blob_name = 'Streamlit/models/trained_inception_model.keras'
 
 def load_model_from_gcs(bucket_name, model_blob_name):
     client = storage.Client()
