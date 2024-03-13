@@ -9,6 +9,11 @@ from tensorflow.keras.models import load_model
 from google.cloud import storage
 import io
 import os
+from google.oauth2 import service_account
+from google.cloud import storage
+
+credentials = service_account.Credentials.from_service_account_file('C:\Users\susy_\IH-Labs\Security\credentials.json')
+client = storage.Client(credentials=credentials, project='hire-me-or-not-imageclassifier')
 
 #Generating a temporary directory for storage in google cloud
 if not os.path.exists('/tmp/'):
@@ -17,7 +22,7 @@ if not os.path.exists('/tmp/'):
 # Loading the model from Google Cloud Storage
 
 bucket_name = 'hire-me-or-not-imageclassifier'
-model_blob_name = 'Hire-me-or-not-imageclassifier/Streamlit/models/trained_inception_model.keras'
+model_blob_name = 'Hire-me-or-not-image-classifier-fun-project/Streamlit/models/trained_inception_model.keras'
 
 def load_model_from_gcs(bucket_name, model_blob_name):
     client = storage.Client()
