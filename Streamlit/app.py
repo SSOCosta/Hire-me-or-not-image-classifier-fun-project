@@ -11,6 +11,7 @@ import io
 import os
 from google.oauth2 import service_account
 from google.cloud import storage
+from pathlib import Path
 
 credentials = service_account.Credentials.from_service_account_file('C:\\Users\\susy_\\IH-Labs\\Security\\credentials.json')
 client = storage.Client(credentials=credentials, project='hire-me-or-not-imageclassifier')
@@ -116,7 +117,9 @@ def get_description(label):
         return "No specific description available for this category."
 
 # Front page content
-image_path = "Streamlit/images/1655272458248.jpg"
+current_dir = Path(__file__).parent
+image_path = current_dir / "Streamlit" / "images" / "1655272458248.jpg"
+print("Caminho da imagem:", image_path)
 image = Image.open(image_path)
 st.image(image, use_column_width=True)
 st.title("Hire Me or Not? Image Classifier Fun")
