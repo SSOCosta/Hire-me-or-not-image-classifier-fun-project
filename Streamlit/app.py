@@ -12,7 +12,7 @@ import os
 from google.oauth2 import service_account
 from google.cloud import storage
 
-credentials = service_account.Credentials.from_service_account_file('C:\Users\susy_\IH-Labs\Security\credentials.json')
+credentials = service_account.Credentials.from_service_account_file('C:\\Users\\susy_\\IH-Labs\\Security\\credentials.json')
 client = storage.Client(credentials=credentials, project='hire-me-or-not-imageclassifier')
 
 #Generating a temporary directory for storage in google cloud
