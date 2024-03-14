@@ -118,7 +118,7 @@ def get_description(label):
 
 # Front page content
 current_dir = Path(__file__).parent
-image_path = current_dir / "Streamlit" / "images" / "1655272458248.jpg"
+image_path = current_dir / "images" / "1655272458248.jpg"
 print("Caminho da imagem:", image_path)
 image = Image.open(image_path)
 st.image(image, use_column_width=True)
