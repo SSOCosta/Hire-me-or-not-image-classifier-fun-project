@@ -6,7 +6,6 @@ image_galery/*.jpg -text
 image_galery/*.jpeg -text
 image_galery/*.gif -text
 image_galery/*.bmp -text
-
 # Large files tracked with Git LFS
 Streamlit/venv/Lib/site-packages/tensorflow/python/_pywrap_tensorflow_internal.pyd filter=lfs diff=lfs merge=lfs -text
 Streamlit/venv/Lib/site-packages/clang/native/libclang.dll filter=lfs diff=lfs merge=lfs -text
@@ -14,6 +13,8 @@ Streamlit/venv/Lib/site-packages/clang/native/libclang.dll filter=lfs diff=lfs m
 *.dll filter=lfs diff=lfs merge=lfs -text
 *.keras filter=lfs diff=lfs merge=lfs -text
 *.pkl filter=lfs diff=lfs merge=lfs -text
+Model/inception_model_weights.pkl filter=lfs diff=lfs merge=lfs -text
+Model/trained_inception_model.keras filter=lfs diff=lfs merge=lfs -text
 *.csv filter=lfs diff=lfs merge=lfs -text
 *.bat filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
