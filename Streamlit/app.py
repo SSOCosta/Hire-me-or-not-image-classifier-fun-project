@@ -10,10 +10,14 @@ from google.cloud import storage
 import io
 import os
 from google.oauth2 import service_account
-from google.cloud import storage
 from pathlib import Path
+import json
 
-credentials = service_account.Credentials.from_service_account_file('C:\\Users\\susy_\\IH-Labs\\Security\\credentials.json')
+# Configuração das credenciais do GCP a partir de variáveis de ambiente
+gcp_credentials_json = os.getenv('GCP_CREDENTIALS_BASE64')
+gcp_credentials_info = json.loads(base64.b64decode(gcp_credentials_json))
+credentials = service_account.Credentials.from_service_account_info(gcp_credentials_info)
+
 client = storage.Client(credentials=credentials, project='hire-me-or-not-imageclassifier')
 
 #Generating a temporary directory for storage in google cloud
