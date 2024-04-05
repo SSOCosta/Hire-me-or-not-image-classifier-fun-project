@@ -9,6 +9,7 @@ from tensorflow.keras.models import load_model
 from google.cloud import storage
 import io
 import os
+import base64
 from google.oauth2 import service_account
 from pathlib import Path
 import json
