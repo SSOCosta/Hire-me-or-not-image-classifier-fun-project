@@ -1,6 +1,6 @@
 # No exclusions
-# *.png
-# *.jpg
-# *.jpeg
-# *.gif
-# *.bmp
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
