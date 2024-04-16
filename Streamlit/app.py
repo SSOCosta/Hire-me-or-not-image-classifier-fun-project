@@ -14,7 +14,7 @@ from google.oauth2 import service_account
 from pathlib import Path
 import json
 
-# Configuração das credenciais do GCP a partir de variáveis de ambiente
+# Setting up GCP credentials from environment variables
 gcp_credentials_json = os.getenv('GCP_CREDENTIALS_BASE64')
 gcp_credentials_info = json.loads(base64.b64decode(gcp_credentials_json))
 credentials = service_account.Credentials.from_service_account_info(gcp_credentials_info)
