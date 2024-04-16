@@ -21,7 +21,7 @@ credentials = service_account.Credentials.from_service_account_info(gcp_credenti
 
 client = storage.Client(credentials=credentials, project='hire-me-or-not-imageclassifier')
 
-#Generating a temporary directory for storage in google cloud
+# Generating a temporary directory for storage in google cloud
 if not os.path.exists('/tmp/'):
     os.makedirs('/tmp/')
 
@@ -152,7 +152,7 @@ if uploaded_image is not None:
     image_array = keras_image.img_to_array(image.convert('RGB'))  # Convert to RGB
     image_array = preprocess_input(np.expand_dims(image_array, axis=0))
 
-    # Use your image classifier to get predictions
+    # Using the model to get predictions
     predictions = st.session_state.your_image_classifier_module.predict(image_array)[0]
 
     # Display the highest confidence classification above the threshold
@@ -176,6 +176,6 @@ if uploaded_image is not None:
         st.subheader("Share Your Results:")
         st.markdown(share_link, unsafe_allow_html=True)
     else:
-        # Display a message when confidence is below the threshold
+        # Message to display when confidence is below the threshold
         st.subheader("Whispers of Uncertainty")
         st.write("The model seems to be on a vacation from confidence and is enjoying the uncertainty of the moment.\n Please upload another image.")
